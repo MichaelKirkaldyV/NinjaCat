@@ -9,9 +9,9 @@
 
 		$(document).ready(function(){
 			$('img').click(function(){
-			 var attr = $(this).attr();
-			 $(this).attr(attr);
-
+			 $(this).attr();
+			 $(this).attr('alt-src');
+			 $(this).attr('alt-src')
 			
 			})
 
@@ -23,11 +23,11 @@
 	</script>
 </head>
 <body>
-	<img alt-src="cat1" src="cat1.png">
-	<img alt-src="cat2" src="cat2.png">
-	<img alt-src="ninja2" src="ninja2.png">
-	<img alt-src="ninja3" src="ninja3.png">
-	<img alt-src="ninja4" src="ninja4.png">
+	<img alt-src="ninja2.png" src="cat1.png">
+	<img alt-src="ninja3.png" src="cat2.png">
+	<img alt-src="cat1.png" src="ninja2.png">
+	<img alt-src="cat2.png" src="ninja3.png">
+	<img alt-src="cat1.png" src="ninja4.png">
 
 
 </body>
