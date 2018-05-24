@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Functions</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="jQueryFunction.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		
+		$(document).ready(function(){
+
+			$('#button1').click(function(){
+				$('h1.1').hide();
+			})
+
+			$('#button2').click(function(){
+				$('h1.1').show();
+			})
+
+			$('#button3').toggle(function(){
+				$('h1.3').html('<i>One More Time!</i>');
+				} , function(){
+				$('h1.3').html('<i>You did it!</i>');
+				})
+			
+			$('#button4').click(function(){
+				$('h1.4').slideDown();
+				$('h1.4').slideUp();
+
+			})
+
+			$('#button5').click(function(){
+				$('h1.5').slideToggle();
+			})
+
+			$('#button6').click(function(){
+				$('h1.6').fadeIn();
+				$('h1.6').fadeOut();
+			})
+
+			$('#button7').click(function(){
+				$('h1.7').addClass("bigFont");
+			})
+
+			$('#button8').click(function(){
+				$('h1.8').before('But,');
+				$('h1.8').after('We Win...,')
+			})
+
+			$('#button9').click(function(){
+				$('h1.9').append("Like this..");
+			})
+
+			$('#button10').click(function(){
+				$('h1.10').html("<i>You did it!</>");
+			})
+
+			$('#button11').click(function(){
+				var attribute = $('h1.11').attr('class'); 		//takes header and chooses class
+				$('p.p11').text(attribute);						//then selects the paragraph and sets it to the attribute.
+			})
+
+			$(#'button12').click(function(){
+				var value = $('h1.12').val();
+				$('p.p12').text(value);
+			})
+
+		})
+			
+
+
+
+
+
+
+
+	</script>
+</head>
+<body>
+	<div id="container">
+		<div id="query1">
+			<button id="button1">Click Me!</button>
+			<h1 class="1">ClickToHide</h1>
+			<p>Make the title disappear!</p>
+		</div>
+		<div id="query2">
+			<button id="button2">Click Me!</button>
+			<h1 class="2">Show Header 1</h1>
+			<p>Make the title reappear!</p>
+		</div>
+		<div id="query3">
+			<button id="button3">Click Me!</button>
+			<h1 class="3">Toggle Me!</h1>
+			<p>Click the button!</p>
+		</div>
+		<div id="query4">
+			<button id="button4">Click Me!</button>
+			<h1 class="4"><i>Slideee</i></h1>
+			<p>Click the button!</p>
+		</div>
+		<div id="query5">
+			<button id="button5">Click Me!</button>
+			<h1 class="5"><i>Slide Toggglee</i></h1>
+			<p>Click the button!</p>
+		</div>
+		<div id="query6">
+			<button id="button6">Click Me!</button>
+			<h1 class="6"><i>Fade In/Out</i></h1>
+			<p>Click the button!</p>
+		</div>
+		<div id="query7">
+			<button id="button7">Click Me!</button>
+			<h1 class="7">Add a Class!</h1>
+			<p>Click to add a class!</p>
+		</div>
+		<div id="query8">
+			<button id="button8">Click Me!</button>
+			<h1 class="8">Before!</h1>
+			<p>Click to use .before and .after</p>
+		</div>
+		<div id="query9">
+			<button id="button9">Click Me!</button>
+			<h1 class="9">Append Please</h1>
+			<p>Click to append!</p>
+		</div>
+		<div id="query10">
+			<button id="button10">Click Me!</button>
+			<h1 class="10">HTML</h1>
+			<p>Click to use HTML manipulation!</p>
+		</div>
+		<div id="query11">
+			<button id="button11">Click Me!</button>
+			<h1 class="11">Attribute</h1>
+			<p class="p11">Click to use .attr and .text manipulation!</p>
+		</div>
+		<div id="query12">
+			<button id="button12">Click Me!</button>
+			<h1 class="12">Value</h1>
+			<p class="p12">Click to use .val manipulation!</p>
+		</div>
+		<div id="query13">
+			<button id="button13">Click Me!</button>
+			<h1 class="13">DATA</h1>
+			<p class="p13">Click to use .data manipulation!</p>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+
+</body>
+</html>

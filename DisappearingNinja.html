@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Disappearing Ninja</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="luffy.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+			$('img').click(function(){
+				$(this).hide();
+			})
+
+			$('#button').click(function(){
+				$('img').show();
+			})
+
+		})
+	</script>
+</head>
+<body>
+	<div id="container">
+		<img  src="luffy.png">
+		<img  src="luffy.png">
+		<img  src="luffy.png">
+		<div id="images">
+			<img  src="luffy.png">
+			<img  src="luffy.png">
+			<img  src="luffy.png">
+		</div>
+		<button id="button">Restore</button>
+	</div>
+
+</body>
+</html>

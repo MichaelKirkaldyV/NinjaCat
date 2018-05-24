@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Practice</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		
+	 $(document).ready(function(){
+
+		     $( "#target" ).toggle(function() {
+		  alert( "First handler for .toggle() called." );
+		}, function() {
+		  alert( "Second handler for .toggle() called." );
+		});
+      
+    })
+
+	 
+
+
+
+
+
+
+	</script>
+</head>
+<body>
+	<div id="target">
+  Click here
+</div>
+	<p id='myParagraph'>This is my paragraph! </p>
+	<button id="button">ClickMe</button>
+
+
+</body>
+</html>
